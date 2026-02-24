@@ -1,0 +1,117 @@
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .filter-group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-title h2 {
+    font-size: 28px;
+  }
+  
+  .stat-value {
+    font-size: 36px;
+  }
+  
+  .category-item:hover {
+    margin: 0;
+    padding: 16px 0;
+    background: none;
+  }
+  
+  .navbar {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  
+  .account-dropdown {
+    right: -10px;
+    min-width: 200px;
+  }
+  
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .list-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .expense-item, .category-item {
+    padding: 16px 20px;
+  }
+  
+  .expense-info, .category-info {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 0 16px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  
+  .stat-card {
+    padding: 20px;
+  }
+  
+  .category-info {
+    gap: 8px;
+  }
+  
+  .auth-container {
+    padding: 24px;
+    margin: 16px;
+  }
+  
+  .expense-form-card, .category-form-card {
+    padding: 20px;
+  }
+  
+  .expense-item, .category-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

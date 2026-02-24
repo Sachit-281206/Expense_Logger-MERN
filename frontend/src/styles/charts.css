@@ -1,0 +1,61 @@
+/* ========== ENHANCED CHARTS STYLES ========== */
+.charts-container {
+  margin-top: 32px;
+}
+
+.charts-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.charts-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 8px 0;
+}
+
+.charts-header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 16px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.chart-card {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(17, 24, 39, 0.08);
+  border: 1px solid #f1f5f9;
+}
+
+.chart-header {
+  margin-bottom: 20px;
+}
+
+.chart-header h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+}
+
+.chart-subtitle {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.chart-wrapper {
+  height: 300px;
+  position: relative;
+}
+
+.pie-chart .chart-wrapper {
+  height: 280px;
+}
