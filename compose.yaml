@@ -1,0 +1,32 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:5000/api
+    ports:
+      - "5173:5173"
+    networks:
+      - mern-network
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
+    networks:
+      - mern-network
+
+  mongodb:
+    image: mongo
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - mern-network
+
+volumes:
+  mongodb-data:
+
+networks:
+  mern-network:
